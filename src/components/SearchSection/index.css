@@ -1,0 +1,17 @@
+h1 {
+	width: 386px;
+	height: 118px;
+	left: 50px;
+	top: 157px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 59px;
+	color: #09295e;
+	margin-top: 80px;
+}
+
+.search-section {
+	height: 350px;
+}

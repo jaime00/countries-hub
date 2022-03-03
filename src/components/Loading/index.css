@@ -1,0 +1,21 @@
+.loading {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 100px;
+}
+.spinner {
+	width: 11px;
+	height: 11px;
+	border-radius: 11px;
+	box-shadow: 28px 0px 0 0 rgba(20, 75, 163, 0.2), 22.68px 16.52px 0 0 rgba(20, 75, 163, 0.4), 8.68px 26.599999999999998px 0 0 rgba(20, 75, 163, 0.6),
+		-8.68px 26.599999999999998px 0 0 rgba(20, 75, 163, 0.8), -22.68px 16.52px 0 0 #144ba3;
+	animation: spinner-b87k6z 1s infinite linear;
+}
+
+@keyframes spinner-b87k6z {
+	to {
+		transform: rotate(360deg);
+	}
+}

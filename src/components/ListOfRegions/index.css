@@ -1,0 +1,8 @@
+.list-of-regions {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin-top: 50px;
+}
