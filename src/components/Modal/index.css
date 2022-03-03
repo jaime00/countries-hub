@@ -14,9 +14,8 @@
 	font-weight: bold;
 	font-size: 40px;
 	line-height: 47px;
-	/* identical to box height */
-
 	color: #09295e;
+	margin-bottom: 0;
 }
 .modal-main p {
 	font-family: Roboto;
@@ -44,7 +43,7 @@
 	position: fixed;
 	background: white;
 	width: 50%;
-	height: auto;
+	height: 50%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);

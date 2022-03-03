@@ -8,7 +8,7 @@ export default function SearchSection(props) {
 		<div className="d-flex search-section">
 			<div className="d-flex flex-column">
 				<h1>
-					Find any country <br />
+					Find any <b>country</b> <br />
 					in the world.
 				</h1>
 				<SearchInput region={region} country={country} handleChange={handleChange} handleSubmit={handleSubmit} />

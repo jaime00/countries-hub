@@ -1,6 +1,8 @@
 .list-of-countries {
 	display: flex;
 	flex-direction: column;
+	margin-right: 9px;
+	margin-left: 9px;
 }
 
 .list-of-countries p {

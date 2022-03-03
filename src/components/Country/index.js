@@ -5,7 +5,7 @@ export default function Country({ name, flag, handleClose, capital, languages, p
 	return (
 		<div className="country" onClick={() => handleClose(props)}>
 			<img alt={name} loading="lazy" src={flag} style={{ width: '30px' }} />
-			<p>{name}</p>
+			<p>{name.length >= 28 ? `${name.slice(0, 28)}...` : name}</p>
 		</div>
 	)
 }

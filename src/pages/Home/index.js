@@ -46,7 +46,7 @@ export default function Home() {
 			loading: false,
 			countries,
 		})
-	}, [])
+	}, [country, region])
 	return (
 		<div className="container">
 			<Modal modal={modal} handleClose={handleClose} />

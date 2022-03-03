@@ -6,7 +6,7 @@ export default function Modal({ handleClose, modal }) {
 	const showHideClassName = isOpen ? 'modal display-block' : 'modal display-none'
 	return (
 		<div className={showHideClassName}>
-			<section className="modal-main container">
+			<section className="modal-main">
 				<span className="close" onClick={handleClose}>
 					X
 				</span>
