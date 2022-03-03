@@ -1,8 +1,6 @@
+import { sortObject, groupBy } from '../../utils/helper'
 import ListOfCountries from '../ListOfCountries'
-import groupBy from 'lodash/groupBy'
-
 import './index.css'
-import { sortObject } from '../../utils/helper'
 
 export default function ListOfRegions({ countries, handleClose }) {
 	const regions = sortObject(groupBy(countries, 'region'))

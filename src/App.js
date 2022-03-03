@@ -1,8 +1,14 @@
 import './App.css'
 import Home from './pages/Home'
+import { Route, Redirect } from 'wouter'
 
 function App() {
-	return <Home />
+	return (
+		<>
+			<Route path="/" component={Home} />
+			<Redirect to="/" />
+		</>
+	)
 }
 
 export default App

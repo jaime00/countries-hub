@@ -1,25 +1,19 @@
-import React, { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import SearchSection from '../../components/SearchSection'
 import ListOfRegions from '../../components/ListOfRegions'
 import Loading from '../../components/Loading'
-import { useState } from 'react'
-import { getCountries } from '../../services'
+import NotFound from '../../components/NotFound'
 import Modal from '../../components/Modal'
+import { getCountries } from '../../services'
 
 export default function Home() {
-	const [state, setState] = useState({
-		loading: false,
-		countries: [],
-	})
-	const [input, setInput] = useState({
-		country: '',
-		region: '',
-	})
+	const [state, setState] = useState({ loading: false, countries: [] })
+	const [input, setInput] = useState({ country: '', region: '' })
 	const [modal, setModal] = useState({
 		country: {
 			name: '',
 			region: '',
-			population: 0,
+			population: '',
 			languages: '',
 			flag: '',
 			capital: '',
@@ -27,7 +21,8 @@ export default function Home() {
 		},
 		isOpen: false,
 	})
-
+	const { country, region } = input
+	const { countries = [], loading } = state
 	const handleClose = (country) => {
 		setModal({ isOpen: !modal.isOpen, country })
 	}
@@ -52,13 +47,12 @@ export default function Home() {
 			countries,
 		})
 	}, [])
-	const { country, region } = input
-	const { countries, loading } = state
 	return (
 		<div className="container">
 			<Modal modal={modal} handleClose={handleClose} />
 			<SearchSection handleSubmit={handleSubmit} handleChange={handleChange} country={country} region={region} />
 			{loading ? <Loading /> : <ListOfRegions handleClose={handleClose} countries={countries} />}
+			{countries.length === 0 && !loading && <NotFound />}
 		</div>
 	)
 }

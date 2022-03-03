@@ -1,8 +1,6 @@
-import React from 'react'
 import Background from '../Background'
-import './index.css'
-
 import SearchInput from '../SearchInput'
+import './index.css'
 
 export default function SearchSection(props) {
 	const { handleChange, country, region, handleSubmit } = props
