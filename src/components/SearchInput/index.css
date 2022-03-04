@@ -1,7 +1,6 @@
 .search-input {
 	display: flex;
 	width: 100%;
-	width: 700px;
 	height: 70px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	min-height: 75px;
@@ -13,7 +12,7 @@
 	font-size: 19px;
 }
 
-.search-input input {
+.search-input .input {
 	left: 50px;
 	top: 295px;
 	background: #ffffff;
@@ -23,7 +22,6 @@
 	border-radius: 10px 0px 0px 10px;
 	padding-left: 20px;
 	width: 25.5em;
-
 	font-family: Roboto;
 	font-style: normal;
 	line-height: 22px;
@@ -65,4 +63,16 @@
 	vertical-align: middle;
 	display: flex;
 	justify-content: center;
+}
+
+@media (max-width: 820px) {
+	.search-input {
+		width: 80vw;
+	}
+}
+
+@media (max-width: 520px) {
+	.search-input .input {
+		width: 30vw;
+	}
 }

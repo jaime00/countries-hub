@@ -24,3 +24,10 @@
 	flex: none;
 	justify-content: flex-end;
 }
+
+@media (max-width: 755px) {
+	.background {
+		overflow: hidden;
+		justify-content: initial;
+	}
+}

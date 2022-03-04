@@ -6,6 +6,7 @@ h1 {
 	line-height: 59px;
 	color: #09295e;
 	margin-top: 109px;
+	z-index: 50;
 }
 
 h1 b {
@@ -15,4 +16,11 @@ h1 b {
 
 .search-section {
 	height: 421px;
+}
+
+@media (max-width: 852px) {
+	h1, h1 b {
+		color: white;
+		text-shadow: 3px 4px 0 #7A7A7A;
+	}
 }
